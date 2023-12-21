@@ -15,7 +15,7 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
     - name: Build the Docker image
       run: |
-        image_name="ghcr.io/pschichtel/sbt:temurin-11"
+        image_name="ghcr.io/pschichtel/sbt:temurin-21"
         podman build -t "$image_name" .
         podman push "$image_name"
 

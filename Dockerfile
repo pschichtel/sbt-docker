@@ -1,8 +1,8 @@
-ARG JDK_IMAGE=docker.io/library/eclipse-temurin:11-jdk-alpine
+ARG JDK_IMAGE=docker.io/library/eclipse-temurin:21-jdk-alpine
 
 FROM ${JDK_IMAGE}
 
-ARG SBT_VERSION=1.9.6
+ARG SBT_VERSION=1.9.8
 
 RUN apk update \
  && apk add --no-cache curl bash
