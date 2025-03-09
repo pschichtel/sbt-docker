@@ -15,7 +15,7 @@ RUN make install
 
 FROM ${JDK_IMAGE}
 
-ARG SBT_VERSION=1.9.9
+ARG SBT_VERSION=1.10.10
 ARG NODE_VERSION=21
 
 RUN apt-get update \
